@@ -3,6 +3,7 @@ import { stripe } from "../lib/stripe";
 
 import Link from "next/link";
 import { Carousel } from "../../components/carousel";
+import { Footer } from "../../components/footer";
 
 export default async function Home() {
   const products = await stripe.products.list({
@@ -37,6 +38,8 @@ export default async function Home() {
       <section className="container">
         <Carousel products={products.data} />
       </section>
+
+      <Footer/>
     </div>
   )
 }

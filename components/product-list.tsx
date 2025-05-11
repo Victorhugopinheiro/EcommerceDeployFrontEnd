@@ -46,6 +46,7 @@ export const ProductList = ({ products }: ProductsProps) => {
                     }
 
             </div>
+            
 
         </div>
     )

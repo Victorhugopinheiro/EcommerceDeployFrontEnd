@@ -1,4 +1,5 @@
 import { Carousel } from "../../../components/carousel";
+import { Footer } from "../../../components/footer";
 import { ProductList } from "../../../components/product-list";
 import { stripe } from "@/lib/stripe";
 
@@ -19,6 +20,7 @@ export default async function Product() {
             <div className="w-full flex-col items-center flex justify-center">
                 
                 <ProductList products={itemsStripe.data} />
+                <Footer/>
             </div>
         </div>
     )
